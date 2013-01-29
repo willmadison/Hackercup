@@ -1,5 +1,5 @@
-WillMatt's (wmadisonDev) Facebook Hacker Cup Solutions
--------------------------------------------------------
+Facebook Hacker Cup Solutions
+-----------------------------
 
 This is simply a little repository for storing my soultions for Hackercup! I may periodically look back at this to remember how I approached something algorithmically but mostly this is just for fun!
 
