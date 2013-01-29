@@ -119,7 +119,7 @@ func findTheMin(caseNumber int, problemCase Case) {
 
   m := []int{problemCase.a} //From problem statement m[0] = a
 
-  //Generate the known values of the array keeping track of the non negatives we've found thus far....
+  //Generate the known values...
   for i := 1; i < problemCase.numKnownValues; i++ {
     nextValue := (problemCase.b * m[i - 1] + problemCase.c) % problemCase.r
     m = append(m, nextValue)
@@ -137,6 +137,7 @@ func findTheMin(caseNumber int, problemCase Case) {
   totalInPool := 0
   poolEntry := 0
 
+  //Fill our pool up with exactly k + 1 entries.
   for ; poolEntry < problemCase.r; poolEntry++ {
     if !candidates.Contains(poolEntry) {
       pool = append(pool, poolEntry)
@@ -148,6 +149,7 @@ func findTheMin(caseNumber int, problemCase Case) {
     }
   }
 
+  //If our pool is empty simply fill it with much larger values which we'll replace the 0th element of each iteration...
   if totalInPool == 0 {
     poolEntry = problemCase.r
 
