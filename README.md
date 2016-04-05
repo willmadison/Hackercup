@@ -1,7 +1,7 @@
 Facebook Hacker Cup Solutions
 -----------------------------
 
-This is simply a little repository for storing my soultions for Hackercup! I may periodically look back at this to remember how I approached something algorithmically but mostly this is just for fun!
+This is simply a little repository for storing my solutions for Hackercup! I may periodically look back at this to remember how I approached something algorithmically but mostly this is just for fun!
 
 All of the source files you'll find here are written in [Go](http://golang.org).
 
